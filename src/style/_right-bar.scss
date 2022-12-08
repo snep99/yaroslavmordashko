@@ -1,0 +1,35 @@
+.right__bar {
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: $z-nav-bar;
+  color: $light-slate;
+  width: 40px;
+}
+.right__bar-container {
+  align-items: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $light-slate;
+  }
+}
+.right__bar-email {
+  padding: 10px;
+  font-family: $mono;
+  font-size: $fz-xxs;
+  line-height: $fz-lg;
+  letter-spacing: 0.16em;
+  writing-mode: vertical-rl;
+  margin: 20px auto;
+  &:hover {
+    transform: translateY(-3px);
+  }
+}

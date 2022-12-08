@@ -1,0 +1,43 @@
+.left__bar {
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: $z-nav-bar;
+  color: $light-slate;
+  width: 40px;
+}
+
+.left__bar-socials {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  flex-direction: column;
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: $light-slate;
+  }
+}
+
+.left__bar-social {
+  padding: 10px;
+  text-align: center;
+  line-height: 1;
+  i {
+    font-size: 25px!important;
+    line-height: 1;
+  }
+  &:hover {
+    transform: translateY(-3px);
+  }
+}
+
+.last-child {
+  margin-bottom: 20px;
+}
