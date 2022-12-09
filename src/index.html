@@ -113,9 +113,121 @@
     <!-- section about -->
 
     <!-- section experience -->
+    <section class="exp" id="exp">
+      <h2 class="exp__title numbered-heading">
+        <span>02.</span> Where I’ve Worked
+      </h2>
+      <div class="exp__inner">
+        <div class="exp__tablist">
+          <button class="exp__tablist-link tab1" id="defaultOpen" onclick="openTab(event, 'Sample1')">Upstatment</button>
+          <button class="exp__tablist-link tab2" onclick="openTab(event, 'Sample2')">Sample 2</button>
+          <button class="exp__tablist-link tab3" onclick="openTab(event, 'Sample3')">Sample 3</button>
+          <button class="exp__tablist-link tab4" onclick="openTab(event, 'Sample4')">Sample 4</button>
+          <button class="exp__tablist-link tab5" onclick="openTab(event, 'Sample5')">Sample 5</button>
+          <div class="exp__tablist-scroll"></div>
+        </div>
+        <div class="exp__tab_content">
+          <div id="Sample1" class="exp__tab_content-item">
+            <h3 class="exp__tab-title">
+              Sample 1 <span>@<a class="text-link" href="#" target="_blank">Company Name</a></span>
+            </h3>
+            <p class="exp__tab-range">May 2018 - Present</p>
+            <div class="exp__tab_tasks-wrapper">
+              <ul class="exp__tab_tasks">
+                <li class="exp__tab_task">Hi World Sample 1</li>
+                <li class="exp__tab_task">Hi Peace Sample 1</li>
+                <li class="exp__tab_task">Hi War Sample 1</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="Sample2" class="exp__tab_content-item">
+            <h3 class="exp__tab-title">
+              Sample 2 <span>@<a class="text-link" href="#" target="_blank">Company Name 2</a></span>
+            </h3>
+            <p class="exp__tab-range">May 2022 - Present</p>
+            <div class="exp__tab_tasks-wrapper">
+              <ul class="exp__tab_tasks">
+                <li class="exp__tab_task">Hi World Sample 2</li>
+                <li class="exp__tab_task">Hi Peace Sample 2</li>
+                <li class="exp__tab_task">Hi War Sample 2</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="Sample3" class="exp__tab_content-item">
+            <h3 class="exp__tab-title">
+              Sample 3 <span>@<a class="text-link" href="#" target="_blank">Company Name 3</a></span>
+            </h3>
+            <p class="exp__tab-range">May 2012 - 2015</p>
+            <div class="exp__tab_tasks-wrapper">
+              <ul class="exp__tab_tasks">
+                <li class="exp__tab_task">Hi World Sample 3</li>
+                <li class="exp__tab_task">Hi Peace Sample 3</li>
+                <li class="exp__tab_task">Hi War Sample 3</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="Sample4" class="exp__tab_content-item">
+            <h3 class="exp__tab-title">
+              Sample 4 <span>@<a class="text-link" href="#" target="_blank">Company Name 4</a></span>
+            </h3>
+            <p class="exp__tab-range">May 2444 - 44</p>
+            <div class="exp__tab_tasks-wrapper">
+              <ul class="exp__tab_tasks">
+                <li class="exp__tab_task">Hi World Sample 4</li>
+                <li class="exp__tab_task">Hi Peace Sample 4</li>
+                <li class="exp__tab_task">Hi War Sample 4</li>
+              </ul>
+            </div>
+          </div>
+
+          <div id="Sample5" class="exp__tab_content-item">
+            <h3 class="exp__tab-title">
+              Sample 5 <span>@<a class="text-link" href="#" target="_blank">Company Name 5</a></span>
+            </h3>
+            <p class="exp__tab-range">May 2055 - 1099</p>
+            <div class="exp__tab_tasks-wrapper">
+              <ul class="exp__tab_tasks">
+                <li class="exp__tab_task">Hi World Sample 5</li>
+                <li class="exp__tab_task">Hi Peace Sample 5</li>
+                <li class="exp__tab_task">Hi War Sample 5</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- section experience -->
+
+    
   </main>
   <footer>
   </footer>
+
+  <script>
+    function openTab(evt, tabName) {
+      // Declare all variables
+      let i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.querySelectorAll(".exp__tab_content-item");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.querySelectorAll(".exp__tablist-link");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+  </script>
 </body>
 </html>

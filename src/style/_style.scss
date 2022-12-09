@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
     color: $green;
     font-family: $mono;
-    font-size: clamp($fz-md,3vw,$fz-xl);
+    font-size: clamp($fz-xl,3vw,$fz-xxl);
     font-weight: 400;
   }
   &::after {
