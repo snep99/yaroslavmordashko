@@ -110,3 +110,10 @@
     color: $green;
   }
 }
+
+//media
+@media (min-width: 700px) {
+  .exp__inner {
+    min-height: 340px;
+  }
+}
